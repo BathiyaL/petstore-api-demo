@@ -1,0 +1,31 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Gradle files
+.gradle
+/build/
+!gradle-wrapper.jar
+.gradletasknamecache
+gradle-app.setting
+
+# Jar files
+*.jar
+*.war
+*.ear
+
+# IDE specific files
+.idea
+*.iml
+.classpath
+.project
+.settings
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Spring Boot specific files
+target/

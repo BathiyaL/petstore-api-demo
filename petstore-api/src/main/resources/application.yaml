@@ -1,0 +1,47 @@
+server:
+  servlet:
+    context-path: /api/v1
+
+external:
+  pets-tore:
+    url: https://petstore.swagger.io/v2
+
+app:
+  data-mode: Remote
+
+spring:
+  datasource:
+#    url: jdbc:h2:tcp://localhost:9092/~/petdb
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:petdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:file:~/petdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+
+#springdoc:
+#  api-docs:
+#    enabled: true
+#    path: /api-docs
+#  swagger-ui:
+#    enabled: true
+#    path: /swagger-ui.html
+
+logging:
+  level:
+    org:
+      springdoc: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
