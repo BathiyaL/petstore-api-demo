@@ -1,6 +1,6 @@
 # 🐾 petstore-api-demo
-
-A demo Spring Boot API implementing a simple Pet Store with support for API versioning, CRUD operations, and Swagger documentation. The application supports two operational modes — **Remote** and **Local** — which determine how it handles data sources.
+A demo Spring Boot API implementing a simple Pet Store with support for API versioning, CRUD operations, and Swagger documentation. This project is inspired by the [Swagger Petstore API example](https://petstore.swagger.io/), and follows a similar structure for educational and testing purposes.
+The application supports two operational modes — **Remote** and **Local** — which determine how it handles data sources.
 
 ---
 
