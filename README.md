@@ -50,8 +50,8 @@ cd petstore-api-demo
 
 The API will be available at `http://localhost:8080/api/v1/pets`.
 
-✔️ Swagger UI: `http://localhost:8080/swagger-ui/index.html`  
-📄 OpenAPI Spec: `http://localhost:8080/v3/api-docs`  
+✔️ Swagger UI: `http://localhost:8080/api/v1/swagger-ui/index.html`  
+📄 OpenAPI Spec: `http://localhost:8080/api/v1/api-docs`  
 🩺 Custom Health Check: `http://localhost:8080/api/v1/health`
 
 ---
